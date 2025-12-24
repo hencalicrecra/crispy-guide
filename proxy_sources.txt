@@ -4,4 +4,5 @@
 https://raw.githubusercontent.com/proxifly/free-proxy-list/refs/heads/main/proxies/countries/US/data.txt
 https://raw.githubusercontent.com/Zaeem20/FREE_PROXIES_LIST/refs/heads/master/https.txt
 https://raw.githubusercontent.com/elliottophellia/proxylist/refs/heads/master/results/http/country/US/http_US_checked.txt
-https://raw.githubusercontent.com/wiki/gfpcom/free-proxy-list/lists/http.txt
+
+
