@@ -1,0 +1,42 @@
+name: Proxy Checker
+
+on:
+  schedule:
+    # Запуск каждые 2 часа
+    - cron: '0 */2 * * *'
+  workflow_dispatch: # Ручной запуск
+
+permissions:
+  contents: write
+
+jobs:
+  check-proxies:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install aiohttp
+
+      - name: Run Proxy checker
+        env:
+          PROXY_SOURCES: ${{ secrets.PROXY_SOURCES }}
+        run: python scripts/proxy_checker.py
+
+      - name: Commit and push results
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add proxies.txt proxies_http.txt proxies_https.txt proxies_anonymous.txt proxy_report.json countries/
+          git diff --staged --quiet || git commit -m "🔄 Proxy update - $(date +'%Y-%m-%d %H:%M')"
+          git push

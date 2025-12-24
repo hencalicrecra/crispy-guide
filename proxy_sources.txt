@@ -1,0 +1,31 @@
+# Добавь сюда URL источников прокси (по одному на строку)
+# Примеры бесплатных источников:
+
+# TheSpeedX
+https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt
+
+# clarketm
+https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt
+
+# ShiftyTR
+https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/http.txt
+https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/https.txt
+
+# monosans
+https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/http.txt
+
+# jetkai
+https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-http.txt
+https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-https.txt
+
+# mertguvencli
+https://raw.githubusercontent.com/mertguvencli/http-proxy-list/main/proxy-list/data.txt
+
+# roosterkid
+https://raw.githubusercontent.com/roosterkid/openproxylist/main/HTTPS_RAW.txt
+
+# proxy-list
+https://raw.githubusercontent.com/proxy-list/proxy-list/main/proxy-list-raw.txt
+
+# proxy-list
+https://raw.githubusercontent.com/proxifly/free-proxy-list/refs/heads/main/proxies/countries/US/data.txt
